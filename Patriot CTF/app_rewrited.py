@@ -8,7 +8,7 @@ import hashlib
 app = Flask(__name__)
 server_start_time = datetime(2024, 9, 21, 10, 39, 15)
 server_start_str = server_start_time.strftime('%Y%m%d%H%M%S')
-# Generate hash with server start time
+# Generate hash based on the server start time
 secure_key = "5366f780393b7cdddfc817fab3cbfbbbb6078c3952733a569d586c0089b2a1f0"
 app.secret_key = secure_key
 app.config['PERMANENT_SESSION_LIFETIME'] = timedelta(seconds=300)
